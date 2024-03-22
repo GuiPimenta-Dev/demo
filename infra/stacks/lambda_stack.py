@@ -25,4 +25,3 @@ class LambdaStack(Stack):
 
         # AnotherPrivateHelloWorld
         AnotherPrivateHelloWorldConfig(self.services)
-        AnotherPrivateHelloWorldConfig(self.services)
