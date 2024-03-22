@@ -10,6 +10,6 @@ class AnotherPrivateHelloWorldConfig:
             
         )
 
-        services.api_gateway.create_endpoint("GET", "/another_private_hello_world", function)
+        services.api_gateway.create_endpoint("GET", "/another_private_hello_world", function, public=True)
 
             

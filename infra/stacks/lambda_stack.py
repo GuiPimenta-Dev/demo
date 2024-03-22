@@ -1,3 +1,4 @@
+from functions.another_private_hello_world.config import AnotherPrivateHelloWorldConfig
 from authorizers.jwt.config import JwtAuthorizerConfig
 from functions.another_private_hello_world.config import AnotherPrivateHelloWorldConfig
 from functions.private_hello_world.config import PrivateHelloWorldConfig
@@ -23,4 +24,5 @@ class LambdaStack(Stack):
         PrivateHelloWorldConfig(self.services)
 
         # AnotherPrivateHelloWorld
+        AnotherPrivateHelloWorldConfig(self.services)
         AnotherPrivateHelloWorldConfig(self.services)
