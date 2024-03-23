@@ -47,7 +47,7 @@
         },
         "bucket": "gui-docs",
         "coverage": 80,
-        "base_url": "",
+        "base_url": "https://lbcdhwe2d2.execute-api.us-east-2.amazonaws.com/staging",
         "dev": {
             "arns": {}
         },
