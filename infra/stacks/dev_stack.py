@@ -12,8 +12,6 @@ class DevStack(cdk.Stack):
         super().__init__(scope, f"{context.stage}-{context.name}-Stack", **kwargs)
 
         source = CodePipelineSource.git_hub(f"{context.repo['owner']}/{context.repo['name']}", "dev")
-
-#
         pipeline = pipelines.CodePipeline(
             self,
             "Pipeline",
@@ -28,6 +26,7 @@ class DevStack(cdk.Stack):
                 commands=[
                     "cdk synth",
                 ],
+                
             ),
             pipeline_name=f"{context.stage}-{context.name}-Pipeline",
         )
